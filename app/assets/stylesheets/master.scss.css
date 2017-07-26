@@ -1,1 +1,13 @@
 @import "bootstrap";
+
+body {
+  background-image: url('hip-square.png');
+}
+
+.carousel-img {
+	width:75%;
+	height:75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
