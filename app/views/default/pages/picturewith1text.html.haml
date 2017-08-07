@@ -1,0 +1,10 @@
+.booyah-box
+	.booyah-box
+		%img{:src => @page.content(:photo).try(:html_safe)}
+		%br/
+		.page-title
+			%h1= @page.title
+		%br/
+		.booyah-box.text-content
+			= @page.content(:text).try(:html_safe)
+

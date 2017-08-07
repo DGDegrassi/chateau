@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 body {
-  background-image: url('hip-square.png');
+  background-color: #D6C9BB;
 }
 
 .carousel-img {
@@ -15,7 +15,7 @@ body {
 .booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	background: #fff;
+	background: #948F81;
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
@@ -27,4 +27,20 @@ body {
 .page-text {
 	padding-top:20px;
 	padding-bottom:20px;
+	text-align:center;
+}
+
+.navbar-style {
+	background-color: #948F81;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.text-content {
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
 }

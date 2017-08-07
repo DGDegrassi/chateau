@@ -1,18 +1,21 @@
-.booyah-box.col-xs-10.col-xs-offset-1.carousel-mod
-	#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
-		.carousel-inner{"role" => "listbox"}
-			.carousel-item.active
-				= image_tag 'misserypic1.png', :class => "d-block img-fluid carousel-img"
-			.carousel-item
-				= image_tag 'misserypic2.png', :class => "d-block img-fluid carousel-img"
+.booyah-box
+	.carousel-mod
+		#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
+			.carousel-inner{"role" => "listbox"}
+				.carousel-item.active
+					= image_tag 'misserypic1.png', :class => "d-block img-fluid carousel-img"
+				.carousel-item
+					= image_tag 'misserypic2.png', :class => "d-block img-fluid carousel-img"
 
-		<!-- carousel controls invisible due to white background of pictures -->
-		%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
-			%span.carousel-control-prev-icon{"aria-hidden" => "true"}
-			%span.sr-only Previous
-		%a.carousel-control-next{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
-			%span.carousel-control-next-icon{"aria-hidden" => "true"}
-			%soan.sr-only Next
-			<span class="sr-only">Next</span>
-.booyah-box.col-lg-10.col-log-offset-1.page-text
-	= @page.content(:text).try(:html_safe)
+			<!-- carousel controls invisible due to white background of pictures -->
+			%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
+				%span.carousel-control-prev-icon{"aria-hidden" => "true"}
+				%span.sr-only Previous
+			%a.carousel-control-next{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
+				%span.carousel-control-next-icon{"aria-hidden" => "true"}
+				%soan.sr-only Next
+				<span class="sr-only">Next</span>
+
+	.booyah-box.col-xs-4.col-xs-offset-4.page-text
+		= @page.content(:text).try(:html_safe)
+

@@ -7,6 +7,14 @@
     name:           'text',
     title:          'Text',
     partable_type:  'Spina::Text'
+  }, {
+    name: 'text2',
+    title: 'Text2',
+    partable_type: 'Spina::Text'
+  }, {
+    name: 'photo',
+    title: 'Photo',
+    partable_type: 'Spina::Photo'
   }]
 
   theme.view_templates = [{
@@ -19,6 +27,21 @@
     description:  'A simple page',
     usage:        'Use for your content',
     page_parts:   ['text']
+  }, {
+    name: 'picturewith1text',
+    title: 'Picture with 1 text',
+    description: 'A page with a large picture across the top and a single box for text',
+    page_parts: ['text', 'photo']
+  }, {
+    name: 'picturewith2text',
+    title: 'Picture with 2 texts',
+    description: 'A page with a large picture across the top two text boxes, with the right one larger then the left',
+    page_parts: ['text', 'text2', 'photo']
+  }, {
+    name: 'textonly',
+    title: 'Text Only',
+    description: 'A page with one text box',
+    page_parts: ['text']
   }]
 
   theme.custom_pages = [{

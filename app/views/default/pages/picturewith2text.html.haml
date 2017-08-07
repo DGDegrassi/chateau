@@ -1,0 +1,13 @@
+.booyah-box
+	.booyah-box.col-sm-12
+		%img{:src => @page.content(:photo).try(:html_safe)}
+		%br/
+		.page-title
+			%h1= @page.title
+		%br/
+		.booyah-box.row
+			.booyah-box.col-sm-4.text-content
+				= @page.content(:text).try(:html_safe)
+			.booyah-box.col-sm-8.text-content
+				=@page.content(:text2).try(:html_safe)
+
