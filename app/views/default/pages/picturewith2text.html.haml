@@ -1,6 +1,6 @@
 .booyah-box
 	.booyah-box.col-sm-12
-		%img{:src => @page.content(:photo).try(:html_safe)}
+		%img{:src => @page.content(:photo).file_url}
 		%br/
 		.page-title
 			%h1= @page.title

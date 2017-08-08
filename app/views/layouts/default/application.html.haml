@@ -12,17 +12,18 @@
 
 	%body
 		%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.navbar-style
-			%button.navbar-toggler.navbar-toggler-right{type: "button", "data-target" => "collapse", "data-toggle" => "#navbarSupportedContent", "aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation"}
+			%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse"}
 				%span.navbar-toggler-icon
 
 			%a.navbar-brand
 				=link_to "Chateau de Missery", root_path
 
-			.collapse.navbar-collapse{:id => "navbarSupportedContent"}
-				%ul.navbar-nav.ml-auto
+			.collapse.navbar-collapse{"id" => "bs-example-navbar-collapse-1"}
+				%ul.navbar-nav
 					= render 'default/shared/navigation'
 
-		.container= yield
+		.container
+			= yield
 
 		%footer.footer.col-sm-12
 			.container
