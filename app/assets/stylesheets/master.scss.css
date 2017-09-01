@@ -1,12 +1,13 @@
 @import "bootstrap";
 
 body {
-  background-color: #D6C9BB;
+  background-color: white;
+  font-family: "Lucida Sans", "Lucida Grande", "Trebuchet MS", Georgia, Helvetica, sans-serif;;
 }
 
 .carousel-img {
-	width:75%;
-	height:75%;
+	width: 75%;
+	height: 75%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -15,7 +16,7 @@ body {
 .booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	background: #948F81;
+	background: white;
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
@@ -31,11 +32,13 @@ body {
 }
 
 .navbar-style {
-	background-color: #948F81;
+	background-color: grey;
 }
 
 .page-title {
 	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .text-content {
@@ -44,8 +47,24 @@ body {
 	padding-right: 10px;
 	padding-bottom: 15px;
 }
+
+.double-text {
+	border-right: 1px solid #bebebd
+}
+
+@media(max-width:600px) {
+		.double-text {
+			border-bottom: 1px solid #bebebd;
+			border-right: none;
+	}
+}
+
 .uploaded-pictures {
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 100%;
+}
+
+.nav-item {
+	margin-left: 10px;
 }

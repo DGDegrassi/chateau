@@ -11,26 +11,27 @@
 
 
 	%body
-		%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.navbar-style
-			%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse"}
-				%span.navbar-toggler-icon
+		#flex-content-container
+			%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.navbar-style
+				%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", "aria-expanded" => "false", "aria-controls" => "navbar"}
+					%span.navbar-toggler-icon
 
-			%a.navbar-brand
-				=link_to "Chateau de Missery", root_path
+				%a.navbar-brand
+					=link_to "Chateau de Missery", root_path
 
-			.collapse.navbar-collapse{"id" => "bs-example-navbar-collapse-1"}
-				%ul.navbar-nav
+				.collapse.navbar-collapse{"id" => "bs-example-navbar-collapse-1"}
+					%ul.navbar-nav.navbar-right
+					%br
 					= render 'default/shared/navigation'
 
-		.container
 			= yield
 
-		%footer.footer.col-sm-12
-			.container
-				.row
-					.col-6
-						%p.text-muted For further information, please contact Lucy
-					.col-6
+		#footer
+			.row
+				.col-6
+					%p.text-muted For further information, please contact Lucy
+				.col-6.text-right
+					%span.float-xs-right
 						%p As listed on
 						%a
 						=link_to "Sawday", root_path

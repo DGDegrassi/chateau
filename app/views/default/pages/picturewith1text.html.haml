@@ -3,10 +3,8 @@
 		.container-fluid
 			.row
 				%img{:class => "uploaded-pictures", :src => @page.content(:photo).file_url}
-		%br/
-	.page-title
+	.booyah-box.page-title
 		%h1= @page.title
-	%br/
 	.booyah-box.text-content
 		= @page.content(:text).try(:html_safe)
 

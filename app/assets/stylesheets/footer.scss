@@ -1,28 +1,28 @@
-html {
+#footer {
+  padding-top: 20px;
   position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 50px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  background-color: #948F81;
+  background-color: grey;
   border-top: 1px solid #e4e4e4;
 }
 
-.footer-link {
-  display:inline-block;
-  vertical-align: bottom;
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-content-container {
+  flex: 1;
 }
 
 .footer-right {
   text-align: right;
+  display: inline-block;
 }
 
 p {
@@ -31,4 +31,8 @@ p {
 
 .clear {
   clear:both;
+}
+
+.nav {
+  float: right;
 }
