@@ -15,6 +15,10 @@
     name: 'photo',
     title: 'Photo',
     partable_type: 'Spina::Photo'
+  }, {
+    name: "photo_collection",
+    title: "Photo Collection",
+    partable_type: "Spina::PhotoCollection"
   }]
 
   theme.view_templates = [{
@@ -42,7 +46,17 @@
     title: 'Text Only',
     description: 'A page with one text box',
     page_parts: ['text']
-  }]
+  }, {
+    name: 'photocollection',
+    title: 'Photo Album',
+    description: 'A page with a title and photo album',
+    page_parts: ['photo_collection']
+    }, {
+      name: 'photoslefttextright',
+      title: 'Photos and Text',
+      description: 'A page with a photo collection on the left and text on the right',
+      page_parts: ['text', 'photo_collection']
+      }]  
 
   theme.custom_pages = [{
     name:           'homepage',

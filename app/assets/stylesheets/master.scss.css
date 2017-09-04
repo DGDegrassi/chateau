@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 body {
-  background-color: white;
+  background-color: #D4CFC1;
   font-family: "Lucida Sans", "Lucida Grande", "Trebuchet MS", Georgia, Helvetica, sans-serif;;
 }
 
@@ -16,7 +16,7 @@ body {
 .booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	background: white;
+	background: #D4CFC1;
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
@@ -60,11 +60,21 @@ body {
 }
 
 .uploaded-pictures {
-	display: block;
 	width: 100%;
 	height: 100%;
 }
 
 .nav-item {
 	margin-left: 10px;
+}
+
+.nav {
+	margin-top: 5px;
+}
+.sawdays {
+	max-height: 16px;
+}
+
+a {
+	color: red;
 }

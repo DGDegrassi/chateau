@@ -2,4 +2,5 @@
 - menu = Spina::Pages::MenuPresenter.new(pages.in_menu.arrange(order: :position), self, @page)
 - menu.list_class = 'nav'
 - menu.list_item_css = 'nav-item'
-= menu.to_html
+%ul.nav.navbar-nav.nl.auto.w-100.justify-content-end
+	= menu.to_html
