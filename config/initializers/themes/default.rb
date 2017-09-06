@@ -26,12 +26,6 @@
     title:      'Homepage',
     page_parts: ['text']
   }, {
-    name: 'show',
-    title:        'Default',
-    description:  'A simple page',
-    usage:        'Use for your content',
-    page_parts:   ['text']
-  }, {
     name: 'picturewith1text',
     title: 'Picture with 1 text',
     description: 'A page with a large picture across the top and a single box for text',
