@@ -4,6 +4,7 @@
 			%h1= @page.title
 		%br/
 		.booyah-box
+		%br
 			- if @page.content(:photo_collection).try(:photos)
 				%ul
 					.row

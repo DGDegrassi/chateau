@@ -1,7 +1,8 @@
 @import "bootstrap";
 
 body {
-  background-color: #D4CFC1;
+  color: #948F81;
+  background-color: #D6C9BB;
   font-family: "Lucida Sans", "Lucida Grande", "Trebuchet MS", Georgia, Helvetica, sans-serif;;
 }
 
@@ -16,7 +17,7 @@ body {
 .booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	background: #D4CFC1;
+	background: #D6C9BB;
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
@@ -32,7 +33,12 @@ body {
 }
 
 .navbar-style {
-	background-color: grey;
+	background-color: #948F81;
+}
+
+.title-name {
+	width: 300px;
+	margin-top: 5px;
 }
 
 .page-title {
@@ -65,7 +71,7 @@ body {
 }
 
 .nav-item {
-	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .nav {
@@ -76,5 +82,5 @@ body {
 }
 
 a {
-	color: red;
+	color: #7a6417;
 }
