@@ -91,8 +91,14 @@ body {
 a {
 	color: #7c1212;
 }
-h3 {
+
+h2 {
 	color: #7c1212;
+}
+
+h3 {
+	color: black;
+	font-size: 1em;
 }
 
 h1 {
