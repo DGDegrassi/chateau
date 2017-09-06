@@ -1,9 +1,10 @@
 @import "bootstrap";
 
 body {
-  color: #948F81;
-  background-color: #D6C9BB;
-  font-family: "Lucida Sans", "Lucida Grande", "Trebuchet MS", Georgia, Helvetica, sans-serif;;
+  color: black;
+  background-color: #e5e5e5;
+  font-family: "ITC Franklin Gothic LT Booked", Georgia, Helvetica, sans-serif;;
+  font-size: 1em;
 }
 
 .carousel-img {
@@ -17,7 +18,7 @@ body {
 .booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	background: #D6C9BB;
+	background: white;
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
@@ -33,12 +34,13 @@ body {
 }
 
 .navbar-style {
-	background-color: #948F81;
+	background-color: white;
 }
 
 .title-name {
-	width: 500px;
+	width: 600px;
 	margin-top: 5px;
+	font-size: ;
 }
 
 .page-title {
@@ -82,5 +84,12 @@ body {
 }
 
 a {
-	color: #7a6417;
+	color: #7c1212;
+}
+h3 {
+	color: #7c1212;
+}
+
+h1 {
+	color: gray;
 }
