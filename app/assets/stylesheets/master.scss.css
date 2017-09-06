@@ -5,10 +5,7 @@ body {
   background-color: #e5e5e5;
   font-family: "ITC Franklin Gothic LT Booked", Georgia, Helvetica, sans-serif;;
   font-size: 1em;
-}
-
-.container {
-	width:auto;
+  position: relative;
 }
 
 .carousel-img {
@@ -68,6 +65,10 @@ body {
 			border-bottom: 1px solid #bebebd;
 			border-right: none;
 	}
+}
+
+#flex-content-container {
+  flex: 1;
 }
 
 .uploaded-pictures {
