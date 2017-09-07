@@ -3,7 +3,11 @@
   theme.name = 'default'
   theme.title = 'Default Theme'
 
-  theme.page_parts = [{
+  theme.page_parts = [ {
+    name:           'intro',
+    title:          'Text below title',
+    partable_type:  'Spina::Text'
+  }, {
     name:           'text',
     title:          'Text',
     partable_type:  'Spina::Text'
@@ -27,9 +31,9 @@
     page_parts: ['text']
   }, {
     name: 'picturewith1text',
-    title: 'Picture with 1 text',
-    description: 'A page with a large picture across the top and a single box for text',
-    page_parts: ['text', 'photo']
+    title: 'Picture with title, intro and body',
+    description: 'A page with a large picture across the top, the title and intro text and a single box for text',
+    page_parts: ['intro', 'text', 'photo']
   }, {
     name: 'picturewith2text',
     title: 'Picture with 2 texts',

@@ -6,6 +6,7 @@
 	%article
 		.booyah-box.page-title
 			%h1= @page.title
-		.booyah-box.text-content
-			= @page.content(:text).try(:html_safe)
+			= @page.content(:intro).try(:html_safe)
+			.text-content
+				= @page.content(:text).try(:html_safe)
 

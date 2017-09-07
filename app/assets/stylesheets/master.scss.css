@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+html, body {
+	overflow-x: hidden;
+}
+
 body {
   color: black;
   background-color: #e5e5e5;
@@ -93,14 +97,15 @@ a {
 }
 
 h2 {
-	color: #7c1212;
+	font-size:1em;
 }
 
 h3 {
-	color: black;
 	font-size: 1em;
 }
 
 h1 {
-	color: gray;
+	font-size: 1.6em;
+	font-style: italic;
+	color: #7c1212;
 }
