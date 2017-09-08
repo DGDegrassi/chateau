@@ -80,16 +80,6 @@ body {
 	position: relative;
 }
 
-.caption {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50%);
-	text-align: center;
-	background-color: white;
-
-}
-
 .nav-item {
 	margin-right: 10px;
 }
@@ -136,6 +126,16 @@ h1 {
 		margin-right: auto;
 	}
 }*/
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	text-align: center;
+	color: black;
+	background-color: rgba(255,255,255,0.5);
+
+}
 @media(min-width: 800px) {
 	.uploaded-pictures {
 		max-width: 800px;

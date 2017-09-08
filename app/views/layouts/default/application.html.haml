@@ -19,10 +19,9 @@
 					%span.navbar-toggler-icon
 				%a
 					.title-name.h1
-						=link_to "Chateau de Missery", root_path
+						=link_to "Château de Missery", root_path
 
 				.collapse.navbar-collapse{"id" => "bs-example-navbar-collapse-1"}
-					%ul.navbar-nav.navbar-right
 					= render 'default/shared/navigation'
 
 			= yield
@@ -39,8 +38,6 @@
 						=link_to image_tag("sawdays_logo.jpg", class: "sawdays"), root_path
 						%a
 						=link_to image_tag("twitter_logo.png", ), "https://twitter.com/ChateauMissery"
-						%a
-						=link_to "Map", root_path
 						%a
 						=link_to "Press", root_path
 						%a
