@@ -92,7 +92,7 @@ body {
 }
 
 a {
-	color: #575757;
+	color: #7c1212;
 }
 
 h2 {
@@ -132,7 +132,7 @@ h1 {
 	left: 50%;
 	transform: translate( -50%, -50%);
 	text-align: center;
-	color: black;
+	color: #575757 !important;
 	background-color: rgba(255,255,255,0.5);
 
 }
