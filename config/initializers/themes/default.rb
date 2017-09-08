@@ -16,6 +16,10 @@
     title: 'Text2',
     partable_type: 'Spina::Text'
   }, {
+    name: 'text3',
+    title: 'Text3',
+    partable_type: 'Spina::Text'
+  }, {
     name: 'photo',
     title: 'Photo',
     partable_type: 'Spina::Photo'
@@ -23,6 +27,18 @@
     name: "photo_collection",
     title: "Photo Collection",
     partable_type: "Spina::PhotoCollection"
+  }, {
+    name: 'magphoto',
+    title: 'Mag photo 1',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'magphoto2',
+    title: 'Mag Photo 2',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'magphoto3',
+    title: 'Mag Photo 3',
+    partable_type: 'Spina::Photo'
   }, {
     name: 'photolink1',
     title: 'Photo Link 1',
@@ -57,7 +73,12 @@
     name: 'picturewith1text',
     title: 'Picture with title, intro, and body',
     description: 'A page with a large picture across the top, the title and intro text, a single box for text and 3 pictures as links along the bottom',
-    page_parts: ['intro', 'text', 'photo', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
+    page_parts: ['intro', 'photo', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
+  }, {
+    name: 'magazine',
+    title: 'Magazine Style',
+    description: 'Picture on top, with magazine style pictures and text',
+    page_parts: ['intro', 'photo', 'text', 'magphoto', 'text2', 'magphoto2', 'text3', 'magphoto3', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
   }, {
     name: 'picturewith2text',
     title: 'Picture with 2 texts',
@@ -77,7 +98,7 @@
       name: 'photoslefttextright',
       title: 'Photos and Text',
       description: 'A page with a photo collection on the left and text on the right',
-      page_parts: ['text', 'photo_collection']
+      page_parts: ['intro', 'text', 'photo_collection']
       }]  
 
   theme.custom_pages = [{

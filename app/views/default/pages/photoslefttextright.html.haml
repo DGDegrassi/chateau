@@ -3,7 +3,8 @@
 		%article
 			.page-title
 				%h1= @page.title
-			%br/
+				= @page.content(:intro).try(:html_safe)
+				%br
 		.booyah-box
 			.row.container-fluid
 				.col-sm-4
