@@ -1,0 +1,48 @@
+!!!
+<!DOCTYPE html>
+%html
+	%head
+		
+		%title Château de Missery
+		%meta{:name => "viewport", :content=> "width=device-width, initial-scale=1.0"}
+		= csrf_meta_tags
+		= stylesheet_link_tag "application", media: "all", "data-turbolinks-track"=> "reload"
+		= javascript_include_tag "application", "data-turbolinks-track" => "reload"
+
+
+
+
+	%body
+		#flex-content-container
+			%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.booyah-box.navbar-style
+				%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-toggle" => "collapse", "data-target" => "#navbarNav", "aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle"}
+					%span.navbar-toggler-icon
+				%a
+					%h1.title-name
+						=link_to "Château de Missery", root_path
+				.collapse.navbar-collapse{"id" => "navbarNav"}
+					%ul.nav.navbar-nav.nl.auto.w-100.justify-content-end
+						%ul.navbar-nav
+							%li.nav-item
+								= link_to "Dining", "/dining"
+							%li.nav-item
+								= link_to "Activities", "/activities"
+							%li.nav-item
+								= link_to "Rooms", "/rooms"
+							%li.nav-item
+								= link_to "Burgundy", "/burgundy"
+							%li.nav-item
+								= link_to "Bungundian Cuisine", "/burgundian-cuisine"
+							%li.nav-item
+								= link_to "Gallery", "/gallery"
+							%li.nav-item
+								= link_to "Location", "/location"
+							%li.nav-item
+								= link_to "Booking", "/bookings"
+
+			= yield
+
+		#footer.footer-right
+			%p
+				Copyright 2017
+

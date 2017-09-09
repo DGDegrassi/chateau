@@ -7,7 +7,7 @@ html, body {
 body {
   color: black;
   background-color: #e5e5e5;
-  font-family: "ITC Franklin Gothic LT Booked", Georgia, Helvetica, sans-serif;;
+  font-family: "ITC Franklin Gothic LT Booked", Georgia, Helvetica, sans-serif;
   font-size: 1em;
   position: relative;
 }
@@ -147,6 +147,43 @@ h1 {
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
+
+.hidden {
+	display: none;
+}
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.booking-form{
+	font-family: "ITC Franklin Gothic LT Booked", Georgia, Helvetica, sans-serif;;
+}
+
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;

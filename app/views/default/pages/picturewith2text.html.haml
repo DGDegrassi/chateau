@@ -5,6 +5,8 @@
 				%img{:class => "uploaded-pictures", :src => @page.content(:photo).file_url}
 				%br/
 		%article
+			.price-button
+				%a.btn.btn-primary{"role" => "button", "href" => "/bookings"} Check Prices & Availability
 			.page-title
 				%h1= @page.title
 			%br/
