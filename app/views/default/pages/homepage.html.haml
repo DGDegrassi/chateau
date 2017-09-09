@@ -15,7 +15,15 @@
 				%span.carousel-control-next-icon{"aria-hidden" => "true"}
 				%soan.sr-only Next
 				<span class="sr-only">Next</span>
-
-	.booyah-box.col-xs-4.col-xs-offset-4.page-text
-		= @page.content(:text).try(:html_safe)
-
+	%article
+		.booyah-box
+			.price-button
+				%button.btn.btn-primary{"type" => "button"} Check Prices & Availability
+			.page-title
+				%h1
+					= @page.title
+				= @page.content(:intro).try(:html_safe)
+			%br
+			.text-content
+				= @page.content(:text).try(:html_safe)
+				%br
