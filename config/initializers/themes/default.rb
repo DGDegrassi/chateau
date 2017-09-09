@@ -100,12 +100,7 @@
       title: 'Photos on Left, Text on Right',
       description: 'A page with a photo collection on the left and text on the right',
       page_parts: ['intro', 'text', 'photo_collection']
-    }, {
-      name: 'contact',
-      title: 'Contact page',
-      description: 'A standard page with a contact form at the end',
-      page_parts: ['intro', 'photo', 'text']
-      }]  
+    }]  
 
   theme.custom_pages = [{
     name:           'homepage',
