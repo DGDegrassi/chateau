@@ -1,5 +1,4 @@
 module ApplicationHelper
-  require 'nokogiri'
   def get_url(html)
   	if html != nil
   		link = html.scan(/"([^"]*)"/)
@@ -7,5 +6,5 @@ module ApplicationHelper
  		else
  			return root_path
  		end
-  end
+ 	end
 end

@@ -15,13 +15,12 @@
 	%body
 		#flex-content-container
 			%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.booyah-box.navbar-style
-				%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", "aria-expanded" => "false", "aria-controls" => "navbar"}
-					%span.navbar-toggler-icon
-				%a
-					.title-name.h1
+				%a.navbar-brand
+					%h1.title-name
 						=link_to "Château de Missery", root_path
-
-				.collapse.navbar-collapse{"id" => "bs-example-navbar-collapse-1"}
+				%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-toggle" => "collapse", "data-target" => "#navbarNav", "aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle"}
+					%span.navbar-toggler-icon
+				.collapse.navbar-collapse{"id" => "navbarNav"}
 					= render 'default/shared/navigation'
 
 			= yield

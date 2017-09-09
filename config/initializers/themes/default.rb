@@ -28,10 +28,11 @@
     title: "Photo Collection",
     partable_type: "Spina::PhotoCollection"
   }, {
-    name: 'magphoto',
-    title: 'Mag photo 1',
-    partable_type: 'Spina::Photo'
-  }, {
+  #   taken out magazine style for now, possibly revisit
+  #   name: 'magphoto',
+  #   title: 'Mag photo 1',
+  #   partable_type: 'Spina::Photo'
+  # }, {
     name: 'magphoto2',
     title: 'Mag Photo 2',
     partable_type: 'Spina::Photo'
@@ -75,11 +76,11 @@
     description: 'A page with a large picture across the top, the title and intro text, a single box for text and 3 pictures as links along the bottom',
     page_parts: ['intro', 'photo', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
   }, {
-    name: 'magazine',
-    title: 'Magazine Style',
-    description: 'Picture on top, with magazine style pictures and text',
-    page_parts: ['intro', 'photo', 'text', 'magphoto', 'text2', 'magphoto2', 'text3', 'magphoto3', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
-  }, {
+  #   name: 'magazine',
+  #   title: 'Magazine Style',
+  #   description: 'Picture on top, with magazine style pictures and text',
+  #   page_parts: ['intro', 'photo', 'text', 'magphoto', 'text2', 'magphoto2', 'text3', 'magphoto3', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
+  # }, {
     name: 'picturewith2text',
     title: 'Picture with 2 texts',
     description: 'A page with a large picture across the top two text boxes, with the right one larger then the left',
@@ -93,7 +94,7 @@
     name: 'photocollection',
     title: 'Photo Album',
     description: 'A page with a title and photo album',
-    page_parts: ['photo_collection']
+    page_parts: ['intro', 'photo_collection']
     }, {
       name: 'photoslefttextright',
       title: 'Photos and Text',

@@ -13,7 +13,7 @@ body {
 }
 
 a {
-	color: #7c1212;
+	color: #1C22C9;
 }
 
 h2 {
@@ -27,7 +27,7 @@ h3 {
 }
 
 h1 {
-	font-size: 1.6em;
+	font-size: 1.5em;
 	font-style: italic;
 	color: #7c1212;
 }
@@ -63,9 +63,10 @@ h1 {
 }
 
 .title-name {
-	width: 300px;
+	width: 400px;
 	margin-top: 5px;
 	font-size: 1.5em;
+	color: #7c1212 !important;
 }
 
 .page-title {
@@ -97,17 +98,18 @@ h1 {
 }
 
 .pic-link {
-
 	position: relative;
 }
 
 .nav-item {
 	margin-right: 10px;
+	color: #7c1212;
 }
 
 .nav {
 	margin-top: 5px;
 }
+
 .sawdays {
 	max-height: 16px;
 }
