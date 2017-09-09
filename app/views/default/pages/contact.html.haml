@@ -1,0 +1,17 @@
+.booyah-box
+	.booyah-box
+		.container-fluid
+			.row
+				%img{:class => "uploaded-pictures", :src => @page.content(:photo).file_url}
+	%article
+		.booyah-box
+			.price-button
+				%button.btn.btn-primary{"type" => "button"} Check Prices & Availability
+			.page-title
+				%h1
+					= @page.title
+				= @page.content(:intro).try(:html_safe)
+			%br
+			.text-content
+				= @page.content(:text).try(:html_safe)
+				%br

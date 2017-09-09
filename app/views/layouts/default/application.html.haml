@@ -15,30 +15,17 @@
 	%body
 		#flex-content-container
 			%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.booyah-box.navbar-style
-				%a.navbar-brand
-					%h1.title-name
-						=link_to "Château de Missery", root_path
 				%button.navbar-toggler.navbar-toggler-right{"type" => "button", "data-toggle" => "collapse", "data-target" => "#navbarNav", "aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle"}
 					%span.navbar-toggler-icon
+				%a
+					%h1.title-name
+						=link_to "Château de Missery", root_path
 				.collapse.navbar-collapse{"id" => "navbarNav"}
 					= render 'default/shared/navigation'
 
 			= yield
 
-		#footer
-			.row
-				.col-6
-					%p.text-muted For further information, please contact
-					= mail_to "lucy@chateaudemissery.com", "Lucy"
-				.col-6.text-right
-					%span.float-xs-right
-						%p As listed on
-						%a
-						=link_to image_tag("sawdays_logo.jpg", class: "sawdays"), root_path
-						%a
-						=link_to image_tag("twitter_logo.png", ), "https://twitter.com/ChateauMissery"
-						%a
-						=link_to "Press", root_path
-						%a
-						=link_to "Links", root_path
+		#footer.footer-right
+			%p
+				Copyright 2017
 

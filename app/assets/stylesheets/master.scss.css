@@ -124,6 +124,19 @@ h1 {
 	background-color: rgba(255,255,255,0.5);
 }
 
+.price-button {
+	text-align: right;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+
+.btn-primary {
+	background-color: #1C22C9;
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	border: 1px solid #ccc;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+}
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;
@@ -138,5 +151,17 @@ h1 {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+@media(min-width:1200px) {
+	.price-button {
+		margin-right: 15%;
+	}
+}
+
+@media(min-width: 1600px) {
+	.price-button {
+		margin-right: 25%;
 	}
 }

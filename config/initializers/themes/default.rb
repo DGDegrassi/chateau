@@ -33,14 +33,14 @@
   #   title: 'Mag photo 1',
   #   partable_type: 'Spina::Photo'
   # }, {
-    name: 'magphoto2',
-    title: 'Mag Photo 2',
-    partable_type: 'Spina::Photo'
-  }, {
-    name: 'magphoto3',
-    title: 'Mag Photo 3',
-    partable_type: 'Spina::Photo'
-  }, {
+  #   name: 'magphoto2',
+  #   title: 'Mag Photo 2',
+  #   partable_type: 'Spina::Photo'
+  # }, {
+  #   name: 'magphoto3',
+  #   title: 'Mag Photo 3',
+  #   partable_type: 'Spina::Photo'
+  # }, {
     name: 'photolink1',
     title: 'Photo Link 1',
     partable_type: 'Spina::Photo'
@@ -72,7 +72,7 @@
     page_parts: ['text']
   }, {
     name: 'picturewith1text',
-    title: 'Picture with title, intro, and body',
+    title: 'Standard Page',
     description: 'A page with a large picture across the top, the title and intro text, a single box for text and 3 pictures as links along the bottom',
     page_parts: ['intro', 'photo', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
   }, {
@@ -97,9 +97,14 @@
     page_parts: ['intro', 'photo_collection']
     }, {
       name: 'photoslefttextright',
-      title: 'Photos and Text',
+      title: 'Photos on Left, Text on Right',
       description: 'A page with a photo collection on the left and text on the right',
       page_parts: ['intro', 'text', 'photo_collection']
+    }, {
+      name: 'contact',
+      title: 'Contact page',
+      description: 'A standard page with a contact form at the end',
+      page_parts: ['intro', 'photo', 'text']
       }]  
 
   theme.custom_pages = [{
