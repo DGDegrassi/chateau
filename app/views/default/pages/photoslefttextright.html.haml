@@ -17,3 +17,9 @@
 				.col-sm-8.text-content
 					=@page.content(:text).try(:html_safe)
 					%br
+			.container.text-right.text-muted.social-text
+				Share this Page:
+				= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
+
+				= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
+				= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url

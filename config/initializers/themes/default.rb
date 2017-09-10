@@ -28,19 +28,46 @@
     title: "Photo Collection",
     partable_type: "Spina::PhotoCollection"
   }, {
-  #   taken out magazine style for now, possibly revisit
-  #   name: 'magphoto',
-  #   title: 'Mag photo 1',
-  #   partable_type: 'Spina::Photo'
-  # }, {
-  #   name: 'magphoto2',
-  #   title: 'Mag Photo 2',
-  #   partable_type: 'Spina::Photo'
-  # }, {
-  #   name: 'magphoto3',
-  #   title: 'Mag Photo 3',
-  #   partable_type: 'Spina::Photo'
-  # }, {
+    name: 'photolink4',
+    title: 'Photo Link 4',
+    partable_type: 'Spina::Photo'
+  }, {
+    name:           'textforphoto4',
+    title:          'Text for Photo 4',
+    partable_type:  'Spina::Text'
+  }, {
+    name: 'photolink5',
+    title: 'Photo Link 5',
+    partable_type: 'Spina::Photo'
+  }, {
+    name:           'textforphoto5',
+    title:          'Text for Photo 5',
+    partable_type:  'Spina::Text'
+  }, {
+    name: 'photolink6',
+    title: 'Photo Link 6',
+    partable_type: 'Spina::Photo'
+  }, {
+    name:           'textforphoto6',
+    title:          'Text for Photo 6',
+    partable_type:  'Spina::Text'
+  }, {
+    name: 'photolink7',
+    title: 'Photo Link 7',
+    partable_type: 'Spina::Photo'
+  }, {
+    name:           'textforphoto7',
+    title:          'Text for Photo 7',
+    partable_type:  'Spina::Text'
+  }, {
+    name: 'photolink8',
+    title: 'Photo Link 8',
+    partable_type: 'Spina::Photo'
+  }, {
+    name:           'textforphoto8',
+    title:          'Text for Photo 8',
+    partable_type:  'Spina::Text'
+  }, {
     name: 'photolink1',
     title: 'Photo Link 1',
     partable_type: 'Spina::Photo'
@@ -69,7 +96,7 @@
   theme.view_templates = [{
     name:       'homepage',
     title:      'Homepage',
-    page_parts: ['text']
+    page_parts: ['intro', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photolink4', 'textforphoto4', 'photolink5', 'textforphoto5', 'photolink6', 'textforphoto6', 'photolink7', 'textforphoto7', 'photolink8', 'textforphoto8']
   }, {
     name: 'picturewith1text',
     title: 'Standard Page',

@@ -1,20 +1,9 @@
 .booyah-box
-	.carousel-mod
-		#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
-			.carousel-inner{"role" => "listbox"}
-				.carousel-item.active
-					= image_tag 'missery_arial.jpg', :class => "d-block img-fluid carousel-img"
-				.carousel-item
-					= image_tag 'arrive.jpg', :class => "d-block img-fluid carousel-img"
+	.booyah-box
+		.container-fluid
+			.row
+				= image_tag 'cover.jpg', :class => "uploaded-pictures"
 
-			<!-- carousel controls invisible due to white background of pictures -->
-			%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
-				%span.carousel-control-prev-icon{"aria-hidden" => "true"}
-				%span.sr-only Previous
-			%a.carousel-control-next{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
-				%span.carousel-control-next-icon{"aria-hidden" => "true"}
-				%soan.sr-only Next
-				<span class="sr-only">Next</span>
 	%article
 		.booyah-box
 			.price-button
@@ -27,3 +16,52 @@
 			.text-content
 				= @page.content(:text).try(:html_safe)
 				%br
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "link-pics center-block"), get_url(@page.content(:textforphoto1))
+						.caption
+							= @page.content(:textforphoto1).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "link-pics"), get_url(@page.content(:textforphoto2))
+						.caption
+							= @page.content(:textforphoto2).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "link-pics"), get_url(@page.content(:textforphoto3))
+						.caption
+							= @page.content(:textforphoto3).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink4).try(:file_url), :class => "link-pics center-block"), get_url(@page.content(:textforphoto4))
+						.caption
+							= @page.content(:textforphoto4).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink5).try(:file_url), :class => "link-pics"), get_url(@page.content(:textforphoto5))
+						.caption
+							= @page.content(:textforphoto5).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink6).try(:file_url), :class => "link-pics"), get_url(@page.content(:textforphoto6))
+						.caption
+							= @page.content(:textforphoto6).try(:html_safe)
+			%br
+			.container.text-right.text-muted.social-text
+				Share this Page:
+				= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
+
+				= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
+				= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
+
+/ .carousel-mod
+/ 	#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
+/ 		.carousel-inner{"role" => "listbox"}
+/ 			.carousel-item.active
+/ 				= image_tag 'missery_arial.jpg', :class => "d-block img-fluid carousel-img"
+/ 			.carousel-item
+/ 				= image_tag 'arrive.jpg', :class => "d-block img-fluid carousel-img"
+
+/ 		%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
+/ 			%span.carousel-control-prev-icon{"aria-hidden" => "true"}
+/ 			%span.sr-only Previous
+/ 		%a.carousel-control-next{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
+/ 			%span.carousel-control-next-icon{"aria-hidden" => "true"}
+/ 			%soan.sr-only Next
+/ 			<span class="sr-only">Next</span>	
