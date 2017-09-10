@@ -2,16 +2,19 @@
 	.booyah-box
 		.container-fluid
 			.row
-				= image_tag 'missery_arial.jpg', :class => "uploaded-pictures"
+				= image_tag 'side.jpg', :class => "uploaded-pictures"
 	%article
 		.booyah-box
 			.page-title
 				%h1
-					Check booking and availability
-				intro text here!
+					Inquire Prices & Availability
+				%em “Coming back to Missery is like a love story with a happy end.” 
+				%br
+				= "- Rita"
+
 			%br
 			.text-content
-				more text here if you want!
+				The chateau is available for rent as a whole from May - September. Please use below contact sheet to inquire about pricing and availability. We will be delighted to hear from you!
 				%br
 				%br
 			.container
@@ -19,8 +22,10 @@
 					= simple_form_for @booking do |f|
 						= f.input :name, :required => true
 						= f.input :email, :required => true
-						= f.input :message, :as => :text, :required => true, placeholder: 'Please tell us a little about yourself, and when you would you like to book'
+						= f.input :message, :as => :text, :required => true, placeholder: 'Please tell us a little about yourself, and when you are interested in booking Château de Missery.'
 						.hidden
 							= f.input :nickname, :hint => 'Leave this field blank!'
 						%br
-						= f.button :submit, 'Send message', :class => "btn btn-primary"
+						.text-center
+							= f.button :submit, 'Send message', :class => "btn btn-primary"
+						%br

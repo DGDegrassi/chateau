@@ -56,18 +56,6 @@
     title: 'Photo Link 7',
     partable_type: 'Spina::Photo'
   }, {
-    name:           'textforphoto7',
-    title:          'Text for Photo 7',
-    partable_type:  'Spina::Text'
-  }, {
-    name: 'photolink8',
-    title: 'Photo Link 8',
-    partable_type: 'Spina::Photo'
-  }, {
-    name:           'textforphoto8',
-    title:          'Text for Photo 8',
-    partable_type:  'Spina::Text'
-  }, {
     name: 'photolink1',
     title: 'Photo Link 1',
     partable_type: 'Spina::Photo'
@@ -96,18 +84,13 @@
   theme.view_templates = [{
     name:       'homepage',
     title:      'Homepage',
-    page_parts: ['intro', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photolink4', 'textforphoto4', 'photolink5', 'textforphoto5', 'photolink6', 'textforphoto6', 'photolink7', 'textforphoto7', 'photolink8', 'textforphoto8']
+    page_parts: ['intro', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photolink4', 'textforphoto4', 'photolink5', 'textforphoto5', 'photolink6', 'textforphoto6']
   }, {
     name: 'picturewith1text',
     title: 'Standard Page',
     description: 'A page with a large picture across the top, the title and intro text, a single box for text and 3 pictures as links along the bottom',
     page_parts: ['intro', 'photo', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
   }, {
-  #   name: 'magazine',
-  #   title: 'Magazine Style',
-  #   description: 'Picture on top, with magazine style pictures and text',
-  #   page_parts: ['intro', 'photo', 'text', 'magphoto', 'text2', 'magphoto2', 'text3', 'magphoto3', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
-  # }, {
     name: 'picturewith2text',
     title: 'Picture with 2 texts',
     description: 'A page with a large picture across the top two text boxes, with the right one larger then the left',
@@ -126,7 +109,7 @@
       name: 'photoslefttextright',
       title: 'Photos on Left, Text on Right',
       description: 'A page with a photo collection on the left and text on the right',
-      page_parts: ['intro', 'text', 'photo_collection']
+      page_parts: ['intro', 'text', 'photo_collection', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
     }]  
 
   theme.custom_pages = [{

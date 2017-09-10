@@ -192,6 +192,11 @@ text-align: left;
 	margin-bottom: 2px;
 }
 
+.explore-text{
+	margin-bottom:5px;
+	font-size: 15px;
+}
+
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;
