@@ -17,21 +17,21 @@
 			.container
 				.row
 					.col-sm-4
-						= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "press-pic"), 'livingfrancepdf.pdf', :target => "_blank"
+						= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "press-pic"), image_path('livingfrancepdf.pdf'), :target => "_blank"
 					.col-sm-8.press-text
 						= @page.content(:textforphoto1).try(:html_safe)
 			%br
 			.container
 				.row
 					.col-sm-4
-						= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "press-pic"), 'China_thumb.jpg', :target => "_blank"
+						= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "press-pic"), image_path('China.pdf'), :target => "_blank"
 					.col-sm-8.press-text
 						= @page.content(:textforphoto2).try(:html_safe)
 			%br
 			.container
 				.row
 					.col-sm-4
-						= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "press-pic"), 'WDP_thumb.jpg', :target => "_blank"
+						= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "press-pic"), image_path('WDP_thumb.jpg'), :target => "_blank"
 					.col-sm-8.press-text
 						= @page.content(:textforphoto3).try(:html_safe)
 			%br
