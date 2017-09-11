@@ -1,0 +1,74 @@
+.booyah-box
+	.booyah-box
+		.container-fluid
+			.row
+				%img{:class => "uploaded-pictures", :src => @page.content(:photo).file_url}
+	%article
+		.booyah-box
+			.price-button
+				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
+			.page-title
+				%h1
+					= @page.title
+				= @page.content(:intro).try(:html_safe)
+			%br
+			.text-content
+				= @page.content(:text).try(:html_safe)
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "press-pic"), 'livingfrancepdf.pdf', :target => "_blank"
+					.col-sm-8.press-text
+						= @page.content(:textforphoto1).try(:html_safe)
+			%br
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "press-pic"), 'China_thumb.jpg', :target => "_blank"
+					.col-sm-8.press-text
+						= @page.content(:textforphoto2).try(:html_safe)
+			%br
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "press-pic"), 'WDP_thumb.jpg', :target => "_blank"
+					.col-sm-8.press-text
+						= @page.content(:textforphoto3).try(:html_safe)
+			%br
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink4).try(:file_url), :class => "press-pic"), 'http://www.malathronas.com/2423/missery-french-chateau/', :target => "_blank"
+					.col-sm-8.press-text
+						= @page.content(:textforphoto4).try(:html_safe)
+			%br
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink5).try(:file_url), :class => "press-pic"), 'https://www.nytimes.com/2014/02/11/your-money/its-a-buyers-market-for-private-islands.html', :target => "_blank"
+					.col-sm-8.press-text
+						= @page.content(:textforphoto5).try(:html_safe)
+			%br
+			.container.text-right.text-muted.social-text
+				Share this Page:
+				= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
+
+				= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
+				= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
+			.text-center.explore-text
+				Continue exploring:
+			.container
+				.row
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink6).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto6))
+						.caption
+							= @page.content(:textforphoto6).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink7).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto7))
+						.caption
+							= @page.content(:textforphoto7).try(:html_safe)
+					.col-sm-4
+						= link_to image_tag(@page.content(:photolink8).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto8))
+						.caption
+							= @page.content(:textforphoto8).try(:html_safe)
+			%br
