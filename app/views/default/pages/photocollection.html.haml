@@ -10,12 +10,10 @@
 			.booyah-box
 			%br
 				- if @page.content(:photo_collection).try(:photos)
-					%ul
-						.row
-							- @page.content(:photo_collection).photos.each do |photo|
-								.col-md-6
-									= link_to image_tag(photo.file_url, :class => "press-pic"), photo.file_url, :target => "_blank"
-									%br
+					%ul.img-pad
+						- @page.content(:photo_collection).photos.each do |photo|
+							= link_to image_tag(photo.file_url, :class => "uploaded-pictures img-thumbnail"), photo.file_url, :target => "_blank"
+				%br
 				.container.text-right.text-muted.social-text
 					Share this Page:
 					= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
