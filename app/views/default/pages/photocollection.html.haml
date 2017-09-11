@@ -9,10 +9,11 @@
 				= @page.content(:intro).try(:html_safe)	
 			.booyah-box
 			%br
-				- if @page.content(:photo_collection).try(:photos)
-					%ul.img-pad
-						- @page.content(:photo_collection).photos.each do |photo|
-							= link_to image_tag(photo.file_url, :class => "uploaded-pictures img-thumbnail"), photo.file_url, :target => "_blank"
+				.col-sm-8.offset-sm-2
+					- if @page.content(:photo_collection).try(:photos)
+						%ul.img-pad
+							- @page.content(:photo_collection).photos.each do |photo|
+								= link_to image_tag(photo.file_url, :class => "uploaded-pictures img-thumbnail"), photo.file_url, :target => "_blank"
 				%br
 				.container.text-right.text-muted.social-text
 					Share this Page:
