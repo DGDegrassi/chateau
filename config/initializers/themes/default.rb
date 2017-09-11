@@ -126,7 +126,7 @@
     }, {
       name: 'presspage',
       title: 'Press Page',
-      description: 'The press page, with photos on the left lined up with text on the right',
+      description: 'The press page, with photos on the left lined up with text on the right Cant add new items from here.'
       page_parts: ['intro', 'photo', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photolink4', 'textforphoto4', 'photolink5', 'textforphoto5', 'photolink6', 'textforphoto6', 'photolink7', 'textforphoto7', 'photolink8', 'textforphoto8']
       }]  
 
