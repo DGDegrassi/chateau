@@ -14,7 +14,7 @@
 						.row
 							- @page.content(:photo_collection).photos.each do |photo|
 								.col-md-6
-									= link_to image_tag(photo.file_url, :class => "uploaded-pictures"), photo.file_url, :target => "_blank"
+									= link_to image_tag(photo.file_url, :class => "press-pic"), photo.file_url, :target => "_blank"
 									%br
 				.container.text-right.text-muted.social-text
 					Share this Page:
