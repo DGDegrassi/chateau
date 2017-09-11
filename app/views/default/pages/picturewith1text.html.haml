@@ -34,7 +34,7 @@
 					.caption
 						= @page.content(:textforphoto2).try(:html_safe)
 				.col-sm-4
-					= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto2))
+					= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto3))
 					.caption
 						= @page.content(:textforphoto3).try(:html_safe)
 			%br

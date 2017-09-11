@@ -27,8 +27,8 @@ h3 {
 }
 
 h1 {
+	font-weight: bold;
 	font-size: 1.6em;
-	font-style: italic;
 	color: #7c1212;
 	font-family: "Pinyon Script", cursive;
 }
@@ -64,6 +64,7 @@ h1 {
 }
 
 .title-name {
+	width: 270px;
 	margin-top: 5px;
 	font-size: 1.5em;
 }
@@ -195,6 +196,7 @@ text-align: center;
 	width: 100%;
 	height: auto;
 }
+
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;
