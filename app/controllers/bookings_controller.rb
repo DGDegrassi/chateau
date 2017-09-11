@@ -10,7 +10,7 @@ class BookingsController < ApplicationController
 			flash.now[:notice] = 'Thank you for your message.  We will contact you soon!'
 		else
 			flash.now[:error] = 'Cannot send message.'
-			rendew :new
+			render :new
 		end
 	end
 end
