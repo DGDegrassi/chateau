@@ -196,7 +196,9 @@ text-align: center;
 	width: 100%;
 	height: auto;
 }
-
+.img-pad {
+	padding-left: 0px;
+}
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;
