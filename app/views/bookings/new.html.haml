@@ -17,8 +17,9 @@
 				The chateau is available for rent as a whole from May - September. Please use below contact sheet to inquire about pricing and availability. We will be delighted to hear from you!
 				%br
 			.container
-				%p.text-center.alert-notice{"id" => "notice"} 
-					= notice
+				.margin-center
+					%p.text-center.alert-notice{"id" => "notice"} 
+						= notice
 				.booking-form
 					= simple_form_for @booking do |f|
 						= f.input :name, :required => true
