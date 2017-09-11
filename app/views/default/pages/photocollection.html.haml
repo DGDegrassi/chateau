@@ -22,3 +22,20 @@
 
 					= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
 					= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
+				.text-center.explore-text
+				Continue exploring:
+				.container
+					.row
+						.col-sm-4
+							= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto1))
+							.caption
+								= @page.content(:textforphoto1).try(:html_safe)
+						.col-sm-4
+							= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto2))
+							.caption
+								= @page.content(:textforphoto2).try(:html_safe)
+						.col-sm-4
+							= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto2))
+							.caption
+								= @page.content(:textforphoto3).try(:html_safe)
+				%br

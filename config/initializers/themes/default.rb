@@ -117,7 +117,7 @@
     name: 'photocollection',
     title: 'Photo Album',
     description: 'A page with a title and photo album',
-    page_parts: ['intro', 'photo_collection']
+    page_parts: ['intro', 'photo_collection', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
     }, {
       name: 'photoslefttextright',
       title: 'Photos on Left, Text on Right',
