@@ -198,6 +198,26 @@ text-align: center;
 .img-pad {
 	padding-left: 0px;
 }
+
+.crunchify-top:hover {
+	color: #fff !important;
+	background-color: #7c1212;
+	text-decoration: none;
+}
+ 
+.crunchify-top {
+	text-decoration: none;
+	border-radius: 3.2rem;
+	text-align: center;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.marg-top-3 {
+	margin-top:3px;
+}
+
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;

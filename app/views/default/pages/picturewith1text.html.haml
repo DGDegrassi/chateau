@@ -36,4 +36,6 @@
 					= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto3))
 					.caption
 						= @page.content(:textforphoto3).try(:html_safe)
-			%br
+		.text-center.marg-top-3
+			%a.crunchify-top{"href" =>"#"} Back to top
+		%br
