@@ -13,23 +13,45 @@ body {
 }
 
 a {
-	color: #002DA6;
+	color: #7c1212;
 }
 
 h2 {
 	font-size:1em;
-	color: #7c1212;
+	color: #002DA6;
 }
 
 h3 {
 	font-size: 1em;
-	color: #7c1212;
+	color: #002DA6;
 }
 
 h1 {
 	font-size: 1.6em;
-	color: #7c1212;
+	color: #002DA6;
 	font-family: "Pinyon Script", cursive;
+}
+
+.dropdown-toggle {
+	color: #002DA6;
+}
+.dropdown-color a{
+	color: #002DA6;
+}
+
+#circle {
+	float:right;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: #021E69;
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	border: 1px solid #ccc;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    border-radius: 100px;
 }
 
 .carousel-img {
@@ -218,6 +240,11 @@ text-align: center;
 	margin-top:3px;
 }
 
+.top-pictures{
+	height: 100%;
+	width: 100%;
+}
+
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;
@@ -225,6 +252,14 @@ text-align: center;
 	}
 }
 
+@media(min-width: 600px) {
+	.top-pictures {
+		margin-left:auto;
+		margin-right:auto;
+		max-height: 60%;
+		width:60%;
+	}
+}
 
 @media(min-width: 800px) {
 	.uploaded-pictures {
@@ -232,5 +267,14 @@ text-align: center;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+@media(min-width:1500px) {
+	.top-pictures {
+		margin-left:auto;
+		margin-right:auto;
+		max-height: 70%;
+		width:70%;
 	}
 }

@@ -1,11 +1,12 @@
 .booyah-box
 	.container-fluid
 		.row
-			= image_tag 'cover.jpg', :class => "uploaded-pictures"
+			= image_tag 'cover.jpg', :class => "top-pictures"
 
 	%article
 		.price-button
 			%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
+
 		.page-title
 			%h1
 				= @page.title
