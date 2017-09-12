@@ -10,7 +10,6 @@
 				%h1
 					= @page.title
 				= @page.content(:intro).try(:html_safe)
-			%br
 			.text-content
 				= @page.content(:text).try(:html_safe)
 			.container.text-right.text-muted.social-text

@@ -1,9 +1,9 @@
 .booyah-box
 	%article
+		%br
 		.page-title
 			%h1= @page.title
 			= @page.content(:intro).try(:html_safe)
-			%br
 			.price-button
 				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
 		.row.container-fluid
