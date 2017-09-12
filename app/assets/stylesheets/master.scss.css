@@ -13,7 +13,7 @@ body {
 }
 
 a {
-	color: #1C22C9;
+	color: #002DA6;
 }
 
 h2 {
@@ -63,18 +63,18 @@ h1 {
 }
 
 .title-name {
-	width: 270px;
+	width: 300px;
 	margin-top: 5px;
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
 
 .title-name a{
-	color: #7c1212;
+	color: #002DA6;
 	font-family: "Pinyon Script", cursive;
 }
 
 .nav-item a{
-	color: #7c1212;
+	color: #002DA6;
 }
 
 .page-title {

@@ -128,6 +128,11 @@
       title: 'Press Page',
       description: 'The press page, with photos on the left lined up with text on the right Cant add new items from here.',
       page_parts: ['intro', 'photo', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photolink4', 'textforphoto4', 'photolink5', 'textforphoto5', 'photolink6', 'textforphoto6', 'photolink7', 'textforphoto7', 'photolink8', 'textforphoto8']
+      }, {
+      name: 'picontopandleft',
+      title: 'Picture on top, photos down left side',
+      description: 'Big picture on top, and under it photos on the left and text on right',
+      page_parts: ['intro', 'photo', 'text', 'photo_collection', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photo_collection']
       }]  
 
   theme.custom_pages = [{
