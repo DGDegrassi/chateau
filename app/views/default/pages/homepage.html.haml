@@ -1,54 +1,52 @@
 .booyah-box
-	.booyah-box
-		.container-fluid
-			.row
-				= image_tag 'cover.jpg', :class => "uploaded-pictures"
+	.container-fluid
+		.row
+			= image_tag 'cover.jpg', :class => "uploaded-pictures"
 
 	%article
-		.booyah-box
-			.price-button
-				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
-			.page-title
-				%h1
-					= @page.title
-				= @page.content(:intro).try(:html_safe)
+		.price-button
+			%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
+		.page-title
+			%h1
+				= @page.title
+			= @page.content(:intro).try(:html_safe)
+		%br
+		.text-content
+			= @page.content(:text).try(:html_safe)
 			%br
-			.text-content
-				= @page.content(:text).try(:html_safe)
-				%br
-			.container
-				.row
-					.col-sm-4
-						= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "uploaded-pictures center-block"), get_url(@page.content(:textforphoto1))
-						.caption
-							= @page.content(:textforphoto1).try(:html_safe)
-					.col-sm-4
-						= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto2))
-						.caption
-							= @page.content(:textforphoto2).try(:html_safe)
-					.col-sm-4
-						= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto3))
-						.caption
-							= @page.content(:textforphoto3).try(:html_safe)
-					.col-sm-4
-						= link_to image_tag(@page.content(:photolink4).try(:file_url), :class => "uploaded-pictures center-block"), get_url(@page.content(:textforphoto4))
-						.caption
-							= @page.content(:textforphoto4).try(:html_safe)
-					.col-sm-4
-						= link_to image_tag(@page.content(:photolink5).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto5))
-						.caption
-							= @page.content(:textforphoto5).try(:html_safe)
-					.col-sm-4
-						= link_to image_tag(@page.content(:photolink6).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto6))
-						.caption
-							= @page.content(:textforphoto6).try(:html_safe)
-			%br
-			.container.text-right.text-muted.social-text
-				Share this Page:
-				= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
+		.container
+			.row
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "uploaded-pictures img-thumbnail"), get_url(@page.content(:textforphoto1))
+					.caption
+						= @page.content(:textforphoto1).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "uploaded-pictures img-thumbnail"), get_url(@page.content(:textforphoto2))
+					.caption
+						= @page.content(:textforphoto2).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures img-thumbnail"), get_url(@page.content(:textforphoto3))
+					.caption
+						= @page.content(:textforphoto3).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink4).try(:file_url), :class => "uploaded-pictures img-thumbnail"), get_url(@page.content(:textforphoto4))
+					.caption
+						= @page.content(:textforphoto4).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink5).try(:file_url), :class => "uploaded-pictures img-thumbnail"), get_url(@page.content(:textforphoto5))
+					.caption
+						= @page.content(:textforphoto5).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink6).try(:file_url), :class => "uploaded-pictures img-thumbnail"), get_url(@page.content(:textforphoto6))
+					.caption
+						= @page.content(:textforphoto6).try(:html_safe)
+		%br
+		.container.text-right.text-muted.social-text
+			Share this Page:
+			= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
 
-				= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
-				= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
+			= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
+			= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
 
 / .carousel-mod
 / 	#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
