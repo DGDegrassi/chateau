@@ -15,7 +15,11 @@
 				=@page.content(:text).try(:html_safe)
 		%br
 		.container.text-right.text-muted.social-text
-			Share this Page:
+			Find us on:
+			= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
+			= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/chateaumissery"
+
+			\&nbsp; Share this Page:
 			= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
 
 			= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
