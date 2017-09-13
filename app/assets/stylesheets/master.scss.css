@@ -82,6 +82,8 @@ h1 {
 
 .navbar-style {
 	background-color: white;
+	padding-bottom: 0px;
+	padding-top: 3px;
 }
 
 .title-name {
