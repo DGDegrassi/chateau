@@ -9,7 +9,7 @@
 			= @page.content(:intro).try(:html_safe)	
 		%br
 			.col-sm-8.offset-sm-2
-				#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
+				#carouselExampleControls.carousel.slide{"data-ride" => "carousel", "data-interval" => "3500"}
 					.carousel-inner{"role" => "listbox"}
 						.carousel-item.active
 							%a.center-carousel{"href" => 'cover.jpg', :target => "_blank"}
