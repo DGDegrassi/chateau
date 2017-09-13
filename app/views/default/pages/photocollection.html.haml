@@ -13,9 +13,9 @@
 					.carousel-inner{"role" => "listbox"}
 						.carousel-item.active
 							%a.center-carousel{"href" => 'cover.jpg', :target => "_blank"}
-							= image_tag 'cover.jpg', :class => "d-block img-fluid carousel-img"
+								= image_tag 'cover.jpg', :class => "d-block img-fluid carousel-img"
 						- @page.content(:photo_collection).photos.each do |photo|
-							.carousel-item
+							.carousel-item.active
 								%a.center-carousel{"href" => photo.file_url, :target => "_blank"}
 									%img{:class => "d-block img-fluid carousel-img", :src => photo.file_url}
 						%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
