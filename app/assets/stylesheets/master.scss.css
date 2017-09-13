@@ -29,7 +29,7 @@ h3 {
 }
 
 h1 {
-	font-size: 2.2em;
+	font-size: 2em;
 	color: #002DA6;
 	font-family: 'Parisienne', cursive;
 	font-weight: bold;
@@ -94,9 +94,9 @@ h1 {
 }
 
 .title-name {
-	width: 320px;
+	width: 500px;
 	margin-top: 5px;
-	font-size: 2.2em;
+	font-size: 2em;
 }
 
 .title-name a{
@@ -258,6 +258,7 @@ text-align: center;
 .copyright {
 	font-size: 0.8em;
 }
+
 @media(max-width:600px) {
 	.double-text {
 		border-bottom: 1px solid #bebebd;
