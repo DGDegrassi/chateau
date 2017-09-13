@@ -9,10 +9,21 @@
 			= @page.content(:intro).try(:html_safe)	
 		%br
 			.col-sm-8.offset-sm-2
-				- if @page.content(:photo_collection).try(:photos)
-					%ul.img-pad
+				#carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
+					.carousel-inner{"role" => "listbox"}
+						.carousel-item.active
+							%a.center-carousel{"href" => 'cover.jpg', :target => "_blank"}
+							= image_tag 'cover.jpg', :class => "d-block img-fluid carousel-img"
 						- @page.content(:photo_collection).photos.each do |photo|
-							= link_to image_tag(photo.file_url, :class => "uploaded-pictures img-thumbnail"), photo.file_url, :target => "_blank"
+							.carousel-item
+								%a.center-carousel{"href" => photo.file_url, :target => "_blank"}
+									%img{:class => "d-block img-fluid carousel-img", :src => photo.file_url}
+						%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
+							%span.carousel-control-prev-icon{"aria-hidden" => "true"}
+							%span.sr-only Previous
+						%a.carousel-control-next{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
+							%span.carousel-control-next-icon{"aria-hidden" => "true"}
+							%span.sr-only Next
 			%br
 			.container.text-right.text-muted.social-text
 				Share this Page:

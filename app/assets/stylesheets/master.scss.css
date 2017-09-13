@@ -29,7 +29,7 @@ h3 {
 }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 2em;
 	color: #002DA6;
 	font-family: 'Parisienne', cursive;
 }
@@ -39,29 +39,31 @@ h1 {
 }
 .dropdown-color a{
 	color: #002DA6;
-}
-
-#circle {
-	float:right;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 150px;
-    width: 200px;
-    height: 200px;
-    background-color: #021E69;
-	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-	border: 1px solid #ccc;
-	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    border-radius: 100px;
+	margin-left: 3px;
 }
 
 .carousel-img {
-	width: 75%;
-	height: 75%;
+	height:300px;
+	width: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+.center-carousel {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media(max-width: 800px){
+	.carousel-img {
+		height: 200px;
+	}
+}
+
+@media(min-width: 1400px) {
+	.carousel-img {
+		height: 425px;
+	}
 }
 
 .booyah-box {
@@ -70,10 +72,6 @@ h1 {
 	background: white;
 	border: 1px solid #ccc;
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-}
-
-.carousel-mod {
-	margin: 10px;
 }
 
 .page-text {
