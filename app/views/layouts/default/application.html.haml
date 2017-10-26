@@ -1,6 +1,7 @@
 !!!
 <!DOCTYPE html>
 %html
+	/ %base{:target => "_blank"}
 	%head
 		
 		%title Château de Missery
@@ -21,7 +22,7 @@
 			= yield
 		#footer
 			%p.text-muted.copyright
-				Allée du Château, 21210 Missery, Burgundy, France
+				Missery, Burgundy, France
 				| &copy 2017 | chateaudemissery.com | All Rights Reserved
 		:javascript
 			jQuery(document).ready(function() {
@@ -42,3 +43,6 @@
 				})
 			});
 
+			jQuery('.open-content a').click(function(){
+			    jQuery(this).attr('target', '_blank');
+			});

@@ -5,25 +5,19 @@
 				%img{:class => "top-pictures", :src => @page.content(:photo).file_url}
 		%article
 			.price-button
-				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
+				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Book Now!
 			.page-title
 				%h1
 					= @page.title
 				= @page.content(:intro).try(:html_safe)
-			.text-content
-				= @page.content(:text).try(:html_safe)
-			.container.text-right.text-muted.social-text
-				Find us on:
-				= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
-				= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/chateaumissery"
-				\&nbsp; Share this Page:
-				= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
-
-				= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
-				= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
-			%br
-			.text-center.explore-text
-				Continue exploring:
+			.open-content
+				.text-content
+					= @page.content(:text).try(:html_safe)
+				.container.text-right.text-muted.social-text
+					= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
+					= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/chateaumissery"
+				.text-center.explore-text
+					Continue exploring:
 		.container
 			.row
 				.col-sm-4

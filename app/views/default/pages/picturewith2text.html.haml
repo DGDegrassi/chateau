@@ -5,13 +5,15 @@
 			%br/
 	%article
 		.price-button
-			%a.btn.btn-primary{"role" => "button", "href" => "/bookings"} Check Prices & Availability
+			%a.btn.btn-primary{"role" => "button", "href" => "/bookings"} Book Now!
 		.page-title
 			%h1= @page.title
 		%br/
 		.row.container-fluid
 			.col-sm-4.text-content.double-text
-				= @page.content(:text).try(:html_safe)
+				.open-content
+					= @page.content(:text).try(:html_safe)
 			.col-sm-8.text-content
-				=@page.content(:text2).try(:html_safe)
+				.open-content
+					=@page.content(:text2).try(:html_safe)
 

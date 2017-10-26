@@ -5,7 +5,7 @@
 			%h1= @page.title
 			= @page.content(:intro).try(:html_safe)
 			.price-button
-				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Inquire Prices & Availability
+				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Book Now!
 		.row.container-fluid
 			.col-sm-4
 				- if @page.content(:photo_collection).try(:photos)
@@ -13,18 +13,12 @@
 						- @page.content(:photo_collection).photos.each do |photo|
 							= link_to image_tag(photo.file_url, :class => "uploaded-pictures img-thumbnail"), photo.file_url, :target => "_blank"
 			.col-sm-8.text-content
-				=@page.content(:text).try(:html_safe)
+				.open-content
+					=@page.content(:text).try(:html_safe)
 				%br
 		.container.text-right.text-muted.social-text
-			Find us on:
 			= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
 			= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/chateaumissery"
-
-			\&nbsp; Share this Page:
-			= link_to image_tag("facebook.png", :class => "social-icon"), 'http://www.facebook.com/sharer.php?u='+request.original_url, :target => "_blank"
-
-			= link_to image_tag("twitter_logo.png", :class => "social-icon"), "https://twitter.com/share?url="+request.original_url, :target => "_blank"
-			= link_to image_tag("mail.png", :class => "social-icon"), "mailto:?Subject=Château de Missery&body=I%20saw%20this%20and%20thought%20of%20you!%20"+request.original_url
 		.text-center.explore-text
 			Continue exploring:
 		.container
