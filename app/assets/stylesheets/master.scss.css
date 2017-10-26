@@ -28,17 +28,20 @@ h3 {
 }
 
 h1 {
-	font-size: 1.9em;
+	font-size: 2.2em;
 	color: #002DA6;
 	font-family: 'Parisienne', cursive;
 	font-weight: bold;
 }
-.carousel-control-prev-icon {
-	margin-left: 8px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#002DA6' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+.fa-chevron-right {
+	margin-left: -18px;
+  color: #ed0404;
+  font-size: 20px;
 }
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#002DA6' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+.fa-chevron-left {
+	margin-left: 28px;
+  color:#ed0404;
+  font-size: 20px;
 }
 .dropdown-toggle {
 	color: #002DA6;
