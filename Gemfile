@@ -39,7 +39,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 # Spina CMS
 gem 'spina'
 gem 'haml'
-gem 'rails_12factor', group: :production
 # let's heroku use assets
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
