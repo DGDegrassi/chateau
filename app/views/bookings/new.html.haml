@@ -12,7 +12,7 @@
 			%br
 			= "- Rita"
 			%br
-			.text-content
+			.text-content.text-center
 				The château is available for rent as a whole from May - September. Please use below contact sheet to inquire about pricing and availability. We will be delighted to hear from you!
 				%br
 			.container
@@ -20,9 +20,9 @@
 					= notice
 				.booking-form
 					= simple_form_for @booking do |f|
-						= f.input :name, :required => true
-						= f.input :email, :required => true
-						= f.input :message, :as => :text, :required => true, placeholder: 'Please tell us a little about yourself, and when you are interested in booking Château de Missery.'
+						= f.input :name, label:false, :required => true, placeholder: "Name"
+						= f.input :email, label:false, :required => true, placeholder: "Email"
+						= f.input :message, :as => :text, label:false, :required => true, placeholder: 'Please tell us a little about yourself, and when you are interested in booking Château de Missery.'
 						.hidden
 							= f.input :nickname, :hint => 'Leave this field blank!'
 						%br
