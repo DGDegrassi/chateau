@@ -267,7 +267,7 @@ text-align: center;
 
 .top-pictures{
 	height: 100%;
-	width: 100%;
+	width: auto;
 }
 
 .copyright {
@@ -310,6 +310,7 @@ text-align: center;
 		margin-right:auto;
 		height: 600px;
 		width:auto;
+		max-width: 1250px;
 	}
 	.price-button {
 		margin-right:15%;
