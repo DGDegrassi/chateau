@@ -292,6 +292,9 @@ text-align: center;
 		width:100%;
 
 	}
+	h1 {
+		font-size: 1.9em;
+	}
 }
 
 @media(min-width: 600px) {
