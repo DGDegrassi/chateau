@@ -6,6 +6,7 @@
 		%title Château de Missery
 		%script{:src => "https://use.fontawesome.com/6ee47c5b0b.js"}
 		%meta{:name => "viewport", :content=> "width=device-width, initial-scale=1.0"}
+		%link{:rel => "canonical", :href => "http://chateaudemissery.com"}
 		= csrf_meta_tags
 		= stylesheet_link_tag "application", media: "all", "data-turbolinks-track"=> "reload"
 		= javascript_include_tag "application", "data-turbolinks-track" => "reload"
@@ -46,3 +47,4 @@
 			jQuery('.open-content a').click(function(){
 			    jQuery(this).attr('target', '_blank');
 			});
+
