@@ -35,13 +35,13 @@ h1 {
 }
 .fa-chevron-right {
 	margin-left: -25px;
-  color: #002DA6;
-  font-size: 20px;
+  	color: #002DA6;
+  	font-size: 20px;
 }
 .fa-chevron-left {
 	margin-left: 25px;
-  color:#002DA6;
-  font-size: 20px;
+  	color:#002DA6;
+  	font-size: 20px;
 }
 .dropdown-toggle {
 	color: #002DA6;
@@ -65,15 +65,7 @@ h1 {
 .carousel-control-next, .carousel-control-prev {
 	opacity:1;
 }
-.ccsn {
-	float:right;
-}
-.ccsp {
-	float:left;
-}
-.ccsn, .ccsp {
-	display:none;
-}
+
 @media(max-width: 800px){
 	.carousel-img {
 		height:auto;
@@ -82,13 +74,6 @@ h1 {
 	}
 	.carousel-div {
 		height:270px;
-	}
-	.ccl {
-		display:none;
-	}
-	.ccs {
-		position:relative;
-		display:flex;
 	}
 }
 
