@@ -8,23 +8,31 @@
 			%br/
 			= @page.content(:intro).try(:html_safe)	
 		%br
-			.col-sm-8.offset-sm-2
-				#carouselExampleControls.carousel.slide{"data-ride" => "carousel", "data-interval" => "3500"}
-					.carousel-inner{"role" => "listbox"}
-						.carousel-item.active
-							%a.center-carousel{"href" => 'cover.jpg', :target => "_blank"}
-								= image_tag 'cover.jpg', :class => "d-block img-fluid carousel-img"
-						- @page.content(:photo_collection).photos.each do |photo|
-							.carousel-item
-								%a.center-carousel{"href" => photo.file_url, :target => "_blank"}
-									%img{:class => "d-block img-fluid carousel-img", :src => photo.file_url}
-						%a.carousel-control-prev{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
-							%span.fa.fa-chevron-left{"aria-hidden" => "true"}
-							%span.sr-only Previous
-						%a.carousel-control-next{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
-							%span.fa.fa-chevron-right{"aria-hidden" => "true"}
-							%span.sr-only Next
-			%br
+			.carousel-div
+				.col-sm-8.offset-sm-2
+					#carouselExampleControls.carousel.slide{"data-ride" => "carousel", "data-interval" => "3500"}
+						.carousel-inner{"role" => "listbox"}
+							.carousel-item.active
+								%a.center-carousel{"href" => 'cover.jpg', :target => "_blank"}
+									= image_tag 'cover.jpg', :class => "d-block img-fluid carousel-img"
+							- @page.content(:photo_collection).photos.each do |photo|
+								.carousel-item
+									%a.center-carousel{"href" => photo.file_url, :target => "_blank"}
+										%img{:class => "d-block img-fluid carousel-img", :src => photo.file_url}
+							%a.carousel-control-prev.ccl{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
+								%span.fa.fa-chevron-left{"aria-hidden" => "true"}
+								%span.sr-only Previous
+							%a.carousel-control-next.ccl{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
+								%span.fa.fa-chevron-right{"aria-hidden" => "true"}
+								%span.sr-only Next
+				%div
+					%a.carousel-control-prev.ccsp{:href => "#carouselExampleControls", "role" => "button", "data-slide" => "prev"}
+						%span.fa.fa-chevron-left{"aria-hidden" => "true"}
+						%span.sr-only Previous
+					%a.carousel-control-next.ccsn{"href" => "#carouselExampleControls", "role" => "button", "data-slide" => "next"}
+						%span.fa.fa-chevron-right{"aria-hidden" => "true"}
+						%span.sr-only Next
+				%br
 			.container.text-right.text-muted.social-text
 				= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
 				= link_to image_tag("twitter-logo.png", :class => "social-icon"), "https://twitter.com/chateaumissery"

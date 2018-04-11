@@ -34,12 +34,12 @@ h1 {
 	font-weight: bold;
 }
 .fa-chevron-right {
-	margin-left: -18px;
+	margin-left: -25px;
   color: #002DA6;
   font-size: 20px;
 }
 .fa-chevron-left {
-	margin-left: 24px;
+	margin-left: 25px;
   color:#002DA6;
   font-size: 20px;
 }
@@ -62,10 +62,33 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.carousel-control-next, .carousel-control-prev {
+	opacity:1;
+}
+.ccsn {
+	float:right;
+}
+.ccsp {
+	float:left;
+}
+.ccsn, .ccsp {
+	display:none;
+}
 @media(max-width: 800px){
 	.carousel-img {
-		height: 250px;
+		height:auto;
+		max-height: 250px;
+
+	}
+	.carousel-div {
+		height:270px;
+	}
+	.ccl {
+		display:none;
+	}
+	.ccs {
+		position:relative;
+		display:flex;
 	}
 }
 
