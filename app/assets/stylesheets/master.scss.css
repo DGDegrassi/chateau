@@ -235,6 +235,7 @@ text-align: center;
 .social-icon {
 	height: 48px;
 	width: auto;
+	margin-left: 3px;
 }
 .social-text {
 	font-size: 14px;
