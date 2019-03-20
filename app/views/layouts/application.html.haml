@@ -2,11 +2,18 @@
 <!DOCTYPE html>
 %html
 	%head
-		
+		%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-135756599-1"}
+		:javascript
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-135756599-1');
+
 		%title Château de Missery
 		%script{:src => "https://use.fontawesome.com/6ee47c5b0b.js"}
 		%meta{:name => "viewport", :content=> "width=device-width, initial-scale=1.0"}
-		%link{:rel => "canonical", :href => "http://chateaudemissery"}
+		%link{:rel => "canonical", :href => "http://chateaudemissery.com"}
 		= csrf_meta_tags
 		= stylesheet_link_tag "application", media: "all", "data-turbolinks-track"=> "reload"
 		= javascript_include_tag "application", "data-turbolinks-track" => "reload"
