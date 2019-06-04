@@ -1,3 +1,16 @@
 // Place all the styles related to the PrivacyPolicy controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.priv-policy-container {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+@media(max-width:800px) {
+	.priv-policy-container {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
