@@ -180,6 +180,10 @@ h1 {
 	margin-top: 2px;
 }
 
+.price-button-bottom {
+	margin-left: 45%;
+	margin-right: auto;
+}
 .price-button-mystery-fix {
 	text-align: right;
 	margin-right: 19%;

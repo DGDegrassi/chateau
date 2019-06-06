@@ -46,26 +46,26 @@
 							%li.nav-item
 								= link_to "Rooms", "/rooms"
 							%li.nav-item
-								= link_to "Activities", "/activities"
-							%li.nav-item
 								= link_to "Burgundy", "/burgundy"
 							%li.nav-item
-								= link_to "Wine & Cuisine", "/wine-cuisine "			
+								= link_to "Wine & Cuisine", "/wine-cuisine "
+							%li.nav-item
+								= link_to "Booking", "/booking"	
 							%li.nav-item
 								= link_to "Gallery", "/gallery"
 						%a.dropdown-toggle{"data-toggle" => "dropdown", "href" => "#","aria-haspopup" => "true", "aria-expanded" => "false"} More
 						%span.caret
 						.dropdown-menu.dropdown-menu-right.dropdown-color
 							%a.dropdown-item
-								= link_to "Yoga Retreat", "/the-livinge-yoga-wellness-experience"
-							%a.dropdown-item
-								= link_to "Cookery Experience", "//la-vie-de-chateau-cookery-experience"
-							%a.dropdown-item								
-								= link_to "Location", "/location"
-							%a.dropdown-item								
 								= link_to "Press", "/press"
 							%a.dropdown-item
-								= link_to "Booking", "/booking"
+								= link_to "Location", "/location"
+							%a.dropdown-item
+								= link_to "Activities", "/activities"
+							%a.dropdown-item
+								= link_to "Yoga & Wellness", "/the-livinge-yoga-wellness-experience"
+							%a.dropdown-item
+								= link_to "Cookery Experience", "//la-vie-de-chateau-cookery-experience"
 			= yield
 		#footer
 			%p.text-muted.copyright
