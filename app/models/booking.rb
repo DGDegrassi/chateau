@@ -7,7 +7,7 @@ class Booking < MailForm::Base
 	def headers
 		{
 			:subject => "Booking Inquiry for Missery",
-			:to => "ddegrassi17@gmail.com",
+			:to => "ddegrassi17@gmail.com@gmail.com",
 			:from => %("#{name}" <#{email}>)
 		}
 	end
