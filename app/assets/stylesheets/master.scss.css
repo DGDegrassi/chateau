@@ -134,6 +134,23 @@ h1 {
 	text-align: left;
 }
 
+.text-content-booking {
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.sign-off {
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
 .double-text {
 	border-right: 1px solid #bebebd
 }

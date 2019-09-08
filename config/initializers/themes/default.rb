@@ -103,6 +103,11 @@
     description: 'A page with a large picture across the top, the title and intro text, a single box for text and 3 pictures as links along the bottom',
     page_parts: ['intro', 'photo', 'text', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3']
   }, {
+    name: 'booking',
+    title: 'Booking',
+    description: 'Booking page (same as picturewith1text, but no photo links and text centered',
+    page_parts: ['intro', 'photo', 'text', 'text2']
+  }, {
   #  {
   #   name: 'picturewith2text',
   #   title: 'Picture with 2 texts',
