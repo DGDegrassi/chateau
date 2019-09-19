@@ -83,6 +83,7 @@ h1 {
 	}
 }
 
+
 .booyah-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -149,6 +150,7 @@ h1 {
 	margin-right: 10px;
 	padding-bottom: 15px;
 	text-align: center;
+	font-family: 'Parisienne', cursive;
 }
 
 .double-text {
@@ -346,6 +348,10 @@ text-align: center;
 		margin-right:auto;
 		max-height: 100%;
 		width:100%;
+	}
+	.booking-container {
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 }
 
