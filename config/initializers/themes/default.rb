@@ -24,6 +24,38 @@
     title: 'Photo',
     partable_type: 'Spina::Photo'
   }, {
+    name: 'photo1',
+    title: 'Photo 1',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo2',
+    title: 'Photo 2',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo3',
+    title: 'Photo 3',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo4',
+    title: 'Photo 4',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo5',
+    title: 'Photo 5',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo6',
+    title: 'Photo 6',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo7',
+    title: 'Photo 7',
+    partable_type: 'Spina::Photo'
+  }, {
+    name: 'photo8',
+    title: 'Photo 8',
+    partable_type: 'Spina::Photo'
+  },{
     name: "photo_collection",
     title: "Photo Collection",
     partable_type: "Spina::PhotoCollection"
@@ -75,22 +107,34 @@
     name:           'textforphoto1',
     title:          'Text for Photo 1',
     partable_type:  'Spina::Text'
+  }, {
+    name:           'textforphoto2',
+    title:          'Text for Photo 2',
+    partable_type:  'Spina::Text'
+  }, {
+    name:           'textforphoto3',
+    title:          'Text for Photo 3',
+    partable_type:  'Spina::Text'
+  }, {
+    name:           'textforphotolink1',
+    title:          'Text for Photo link 1',
+    partable_type:  'Spina::Text'
+  }, {
+    name:           'textforphotolink2',
+    title:          'Text for Photo link 2',
+    partable_type:  'Spina::Text'
+  }, {
+    name:           'textforphotolink3',
+    title:          'Text for Photo link 3',
+    partable_type:  'Spina::Text'
   },  {
     name: 'photolink2',
     title: 'Photo Link 2',
     partable_type: 'Spina::Photo'
   }, {
-    name:           'textforphoto2',
-    title:          'Text for Photo 2',
-    partable_type:  'Spina::Text'
-  },  {
     name: 'photolink3',
     title: 'Photo Link 3',
     partable_type: 'Spina::Photo'
-  }, {
-    name:           'textforphoto3',
-    title:          'Text for Photo 3',
-    partable_type:  'Spina::Text'
   }]
 
   theme.view_templates = [{
@@ -138,6 +182,23 @@
       title: 'Picture on top, photos down left side',
       description: 'Big picture on top, and under it photos on the left and text on right',
       page_parts: ['intro', 'photo', 'text', 'photo_collection', 'photolink1', 'textforphoto1', 'photolink2', 'textforphoto2', 'photolink3', 'textforphoto3', 'photo_collection']
+      }, {
+      name: 'blogpage',
+      title: 'Blog Page',
+      description: 'Many rows with photo and text.',
+      page_parts: ['intro',
+        'photo',
+        'photo1', 'textforphoto1',
+        'photo2', 'textforphoto2',
+        'photo3', 'textforphoto3',
+        'photo4', 'textforphoto4',
+        'photo5', 'textforphoto5',
+        'photo6', 'textforphoto6',
+        'photo7', 'textforphoto7',
+        'photo8', 'textforphoto8',
+        'photolink1', 'textforphotolink1',
+        'photolink2', 'textforphotolink2',
+        'photolink3', 'textforphotolink3']
       }]  
 
   theme.custom_pages = [{

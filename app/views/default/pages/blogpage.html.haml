@@ -1,0 +1,97 @@
+.booyah-box
+	.container-fluid
+		.row
+			%img{:class => "top-pictures", :src => @page.content(:photo).file_url}
+		.price-button-mystery-fix
+			%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Get in touch!
+	%article
+		
+		.page-title
+			%h1
+				= @page.title
+			= @page.content(:intro).try(:html_safe)
+		.text-content
+			.open-content
+				= @page.content(:text).try(:html_safe)
+		.container
+			.row
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo1).file_url}
+				.col-sm-8.press-text
+					= @page.content(:textforphoto1).try(:html_safe)
+		%br
+		.container
+			.row
+				.col-sm-8.press-text
+					= @page.content(:textforphoto2).try(:html_safe)
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo2).file_url}
+		%br
+		.container
+			.row
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo3).file_url}
+				.col-sm-8.press-text
+					= @page.content(:textforphoto3).try(:html_safe)
+		%br
+		.container
+			.row
+				.col-sm-8.press-text
+					= @page.content(:textforphoto4).try(:html_safe)
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo4).file_url}
+		%br
+		.container
+			.row
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo5).file_url}
+				.col-sm-8.press-text
+					= @page.content(:textforphoto5).try(:html_safe)
+		%br
+		.container
+			.row
+				.col-sm-8.press-text
+					= @page.content(:textforphoto6).try(:html_safe)
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo6).file_url}
+		%br
+		.container
+			.row
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo7).file_url}
+				.col-sm-8.press-text
+					= @page.content(:textforphoto7).try(:html_safe)
+		%br
+		.container
+			.row
+				.col-sm-8.press-text
+					= @page.content(:textforphoto8).try(:html_safe)
+				.col-sm-4
+					%img{:class => "press-pic", :src => @page.content(:photo8).file_url}
+				
+		%br
+		.container
+			%span
+				%a.btn.btn-primary.price-button-bottom{"role" => "button", "href" => "/booking"} Get in touch!
+		.container.text-right.text-muted.social-text
+			= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
+			= link_to image_tag("Facebook_logo_(square).png", :class => "social-icon"), "https://www.facebook.com/ChateaudeMissery/"
+		.text-center.explore-text
+			Continue exploring:
+		.container
+			.row
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink1).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto6))
+					.caption
+						= @page.content(:textforphotolink1).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink2).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto7))
+					.caption
+						= @page.content(:textforphotolink2).try(:html_safe)
+				.col-sm-4
+					= link_to image_tag(@page.content(:photolink3).try(:file_url), :class => "uploaded-pictures"), get_url(@page.content(:textforphoto8))
+					.caption
+						= @page.content(:textforphotolink3).try(:html_safe)
+		.text-center.marg-top-3
+			%a.crunchify-top{"href" =>"#"} Back to top
+		%br
