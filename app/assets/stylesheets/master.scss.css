@@ -264,7 +264,8 @@ text-align: center;
 }
 .social-text {
 	font-size: 14px;
-	margin-bottom: 2px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .explore-text{
@@ -354,6 +355,14 @@ text-align: center;
 	.booking-container {
 		margin-left: 20%;
 		margin-right: 20%;
+	}
+	.intro-text {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.main-text {
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 }
 
