@@ -353,8 +353,8 @@ text-align: center;
 		width:100%;
 	}
 	.booking-container {
-		margin-left: 20%;
-		margin-right: 20%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	.intro-text {
 		margin-left: 10%;
@@ -363,6 +363,10 @@ text-align: center;
 	.main-text {
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	.price-button {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 }
 
