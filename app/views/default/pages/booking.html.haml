@@ -9,15 +9,14 @@
 			.page-title
 				%h1
 					= @page.title
-		.intro-text.page-title
-			= @page.content(:intro).try(:html_safe)
-		.open-content
-			.text-content-booking.main-text
-				= @page.content(:text).try(:html_safe)
-			%em.sign-off
-				= @page.content(:text2).try(:html_safe)
-		.container
-			.container.text-right.text-muted.social-text
-				= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
-				= link_to image_tag("Facebook_logo_(square).png", :class => "social-icon"), "https://www.facebook.com/ChateaudeMissery/"
+				= @page.content(:intro).try(:html_safe)
+			.open-content
+				.text-content-booking
+					= @page.content(:text).try(:html_safe)
+				%em.sign-off
+					= @page.content(:text2).try(:html_safe)
+			.container
+				.container.text-right.text-muted.social-text
+					= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
+					= link_to image_tag("Facebook_logo_(square).png", :class => "social-icon"), "https://www.facebook.com/ChateaudeMissery/"
 		%br
