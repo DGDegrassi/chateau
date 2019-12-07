@@ -211,7 +211,11 @@ h1 {
 	margin-right: 19%;
 	margin-top: 2px;
 }
-
+.contact-button-center {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 .price-button-stick-right {
 	text-align: right;
 	margin-right: 2px;

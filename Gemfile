@@ -36,6 +36,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Bootstrap  front-end framework
 gem 'bootstrap', '~> 4.0.0.alpha6'
+# Gibbons mailchimp API
+gem 'gibbon', git: 'git://github.co/amro/gibbon.git'
 # Spina CMS
 gem 'spina'
 gem 'haml'

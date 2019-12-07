@@ -4,12 +4,13 @@
 			.row
 				%img{:class => "top-pictures", :src => @page.content(:photo).file_url}
 		%article
-		%br
 		.booking-container
 			.page-title
 				%h1
 					= @page.title
 				= @page.content(:intro).try(:html_safe)
+			.contact-button-center
+				%a.btn.btn-primary{"role" => "button", "href" => "mailto:hello@chateaudemissery.com"} Get in touch!
 			.open-content
 				.text-content-booking
 					= @page.content(:text).try(:html_safe)

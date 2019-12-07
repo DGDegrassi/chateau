@@ -5,7 +5,7 @@
 			%h1= @page.title
 			= @page.content(:intro).try(:html_safe)
 			.price-button-stick-right
-				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Get in touch!
+				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Find out more!
 		.row.container-fluid
 			.col-sm-4
 				- if @page.content(:photo_collection).try(:photos)
@@ -18,7 +18,7 @@
 				%br
 			.container
 				%span
-					%a.btn.btn-primary.price-button-bottom{"role" => "button", "href" => "/booking"} Get in touch!
+					%a.btn.btn-primary.price-button-bottom{"role" => "button", "href" => "/booking"} Find out more!
 		.container.text-right.text-muted.social-text
 			= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
 			= link_to image_tag("Facebook_logo_(square).png", :class => "social-icon"), "https://www.facebook.com/ChateaudeMissery/"
