@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.3.1'
+ruby '2.3.8'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use postgresql as the database for Active Record
@@ -25,6 +25,7 @@ gem 'figaro'
 # Use mail-form and simple-form for contact page
 gem 'mail_form'
 gem 'simple_form'
+gem 'gibbon'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'autoprefixer-rails'
@@ -36,8 +37,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Bootstrap  front-end framework
 gem 'bootstrap', '~> 4.0.0.alpha6'
-# Gibbons mailchimp API
-gem 'gibbon', git: 'git://github.co/amro/gibbon.git'
 # Spina CMS
 gem 'spina'
 gem 'haml'

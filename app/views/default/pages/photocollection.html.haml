@@ -31,6 +31,12 @@
 				%span
 					%a.btn.btn-primary.price-button-bottom{"role" => "button", "href" => "/booking"} Find out more!
 			.container.text-right.text-muted.social-text
+				#thank-you.text-center Thanks for subscribing!
+				= simple_form_for('subscribe', url: '/emailapi/subscribe', method: "post", id: "subscribe", multipart: true, remote: true,class: "addSub") do |f|
+					= f.input :first_name, label: false, placeholder: "First name", input_html: { required: true }
+					= f.input :last_name, label: false, placeholder: "Last name", input_html: { required: true }
+					= f.input :email, label: false, placeholder: "Email", input_html: { required: true }
+					= f.submit "Sign up for the Newsletter!", class: "subButton"
 				= link_to image_tag("icon.png", :class => "social-icon"), 'https://www.instagram.com/chateaudemissery/', :target => "_blank"
 				= link_to image_tag("Facebook_logo_(square).png", :class => "social-icon"), "https://www.facebook.com/ChateaudeMissery/"
 

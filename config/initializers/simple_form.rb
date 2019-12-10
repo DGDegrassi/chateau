@@ -121,7 +121,7 @@ SimpleForm.setup do |config|
   # in this configuration, which is recommended due to some quirks from different browsers.
   # To stop SimpleForm from generating the novalidate option, enabling the HTML5 validations,
   # change this configuration to true.
-  config.browser_validations = false
+  config.browser_validations = true
 
   # Collection of methods to detect if a file type was given.
   # config.file_methods = [ :mounted_as, :file?, :public_filename ]
@@ -144,7 +144,8 @@ SimpleForm.setup do |config|
 
   # Default priority for country inputs.
   # config.country_priority = nil
-
+  # use strings for country
+  config.input_mappings = { /country/ => :string }
   # When false, do not use translations for labels.
   # config.translate_labels = true
 

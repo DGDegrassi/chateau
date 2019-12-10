@@ -58,8 +58,7 @@
 				} else {
 					jQuery('.crunchify-top').fadeOut(duration);
 				}
-			});
-	 
+
 			jQuery('.crunchify-top').click(function(event) {
 				event.preventDefault();
 				jQuery('html, body').animate({scrollTop: 0}, duration);
@@ -68,6 +67,35 @@
 			});
 
 			jQuery('.open-content a').click(function(){
-			    jQuery(this).attr('target', '_blank');
+			jQuery(this).attr('target', '_blank');
 			});
 
+			function handleSubscribeSuccess() {
+				console.log('hiiiii')
+				var cc = jQuery('.subscribe');
+				var ty = jQuery('#thank-you');
+				var form = jQuery('.social-text')
+				cc.animate({
+				width: '0px',
+				height: '0px'
+				}, 500
+				);
+
+				setTimeout(function(){
+					cc.css('display', 'none')
+
+					}, 100
+				);
+				setTimeout(function(){
+					ty.css('display', 'initial')
+					form.css("display", 'initial')
+					}, 100
+				);
+				setTimeout(function(){
+					ty.animate({color: 'white', borderColor: 'blue'}, 1000);
+					}, 100
+				);
+			}
+
+			jQuery('.subscribe').on('ajax:success', handleSubscribeSuccess);
+			});
