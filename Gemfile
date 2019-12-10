@@ -36,7 +36,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Bootstrap  front-end framework
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.1.3'
 # Spina CMS
 gem 'spina'
 gem 'haml'
