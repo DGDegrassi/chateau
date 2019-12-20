@@ -70,32 +70,18 @@
 			jQuery(this).attr('target', '_blank');
 			});
 
+			const formDisplay = jQuery('.subscribe');
 			function handleSubscribeSuccess() {
-				console.log('hiiiii')
-				var cc = jQuery('.subscribe');
-				var ty = jQuery('#thank-you');
-				var form = jQuery('.social-text')
-				cc.animate({
-				width: '0px',
-				height: '0px'
-				}, 500
-				);
+				const ty = jQuery('#thank-you');
 
+				formDisplay.css('display', 'none')
+				ty.css('display', 'initial')
 				setTimeout(function(){
-					cc.css('display', 'none')
+					ty.css('visibility', 'visible')
 
-					}, 100
-				);
-				setTimeout(function(){
-					ty.css('display', 'initial')
-					form.css("display", 'initial')
-					}, 100
-				);
-				setTimeout(function(){
-					ty.animate({color: 'white', borderColor: 'blue'}, 1000);
-					}, 100
+					}, 500
 				);
 			}
 
-			jQuery('.subscribe').on('ajax:success', handleSubscribeSuccess);
+			formDisplay.on('ajax:success', handleSubscribeSuccess);
 			});

@@ -92,3 +92,19 @@
 					return false;
 					})
 				});
+
+			const formDisplay = jQuery('.subscribe');
+			function handleSubscribeSuccess() {
+				const ty = jQuery('#thank-you');
+
+				formDisplay.css('display', 'none')
+				ty.css('display', 'initial')
+				setTimeout(function(){
+					ty.css('visibility', 'visible')
+
+					}, 500
+				);
+			}
+
+			formDisplay.on('ajax:success', handleSubscribeSuccess);
+			});

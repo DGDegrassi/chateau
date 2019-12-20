@@ -235,8 +235,12 @@ h1 {
 }
 
 #thank-you {
+    text-align: right !important;
+    width: 100%;
     display:none;
-    text-align: center;
+    padding-top: 13px;
+    margin-right: 10px;
+    visibility: hidden;
 }
 
 .alert-error {
@@ -327,17 +331,11 @@ text-align: center;
     width: 20%
 }
 @media(max-width:380px) {
-    #thank-you {
-        margin-left: 15%
-    }
 	.title-name {
 		font-size: 1.5em;
 	}
 }
 @media(max-width:600px) {
-    #thank-you {
-        margin-left: 25%
-    }
 	.double-text {
 		border-bottom: 1px solid #bebebd;
 		border-right: none;
@@ -359,11 +357,13 @@ text-align: center;
 
 }
 .subButton {
-    margin-right: 5px
+    padding: 0.4rem 0.75rem;
+    margin-right: 10px;
 }
 .form_group {
     width: 100%
 }
+
 @media(min-width: 600px) {
 	.top-pictures {
 		margin-left:auto;
@@ -393,9 +393,6 @@ text-align: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
-    #thank-you {
-        margin-left: 43%
-    }
 }
 
 @media(min-width: 800px) {
@@ -413,24 +410,16 @@ text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 	}
-    #thank-you {
-        margin-left: 40%
-    }
-}
-@media(min-width: 1200px) {
-    #thank-you {
-        margin-left: 80%
-    }
 }
 @media(max-width: 800px) {
     .form-group {
         width: 100%;
     }
+    .subscribe {
+        margin-bottom: 15px;
+    }
 }
 @media(min-width:1500px) {
-    #thank-you {
-        margin-left: 70%
-    }
 	.top-pictures {
 		margin-left:auto;
 		margin-right:auto;
