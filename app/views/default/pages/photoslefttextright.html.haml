@@ -5,7 +5,7 @@
 			%h1= @page.title
 			= @page.content(:intro).try(:html_safe)
 			.price-button-stick-right
-				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Find out more!
+				%a.btn.btn-primary{"role" => "button", "href" => "/booking"} Find out more
 		.row.container-fluid
 			.col-sm-4
 				- if @page.content(:photo_collection).try(:photos)
@@ -18,7 +18,7 @@
 				%br
 			.container
 				%span
-					%a.btn.btn-primary.price-button-bottom{"role" => "button", "href" => "/booking"} Find out more!
+					%a.btn.btn-primary.price-button-bottom{"role" => "button", "href" => "/booking"} Find out more
 		.container.text-right.text-muted.social-text
 			#thank-you.text-center Thanks for subscribing!
 			= simple_form_for('subscribe', url: '/emailapi/subscribe', method: "post", id: "subscribe", multipart: true, remote: true,class: "addSub") do |f|
