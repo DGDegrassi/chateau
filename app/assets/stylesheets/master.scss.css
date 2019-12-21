@@ -357,8 +357,9 @@ text-align: center;
 
 }
 .subButton {
-    padding: 0.4rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     margin-right: 10px;
+    margin-top: -4px;
 }
 .form_group {
     width: 100%
