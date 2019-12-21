@@ -43,6 +43,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # enables console messages
+  config.web_console.whitelisted_ips = '10.0.2.2'
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
